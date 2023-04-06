@@ -31,7 +31,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         source: "app.py"
-        target: "/home/rplcicd/135121157/"
+        target: "/home/rplcicd/13521157/"
     - name: kill existing flask app
       continue-on-error: true
       uses: appleboy/ssh-action@v0.1.8
@@ -40,7 +40,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: pkill -f 12043
+        script: pkill -f 21157
     - name: start flask app
       uses: appleboy/ssh-action@v0.1.8
       with:
